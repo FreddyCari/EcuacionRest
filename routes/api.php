@@ -21,5 +21,5 @@ Route::get('/calculo',function()
     return 'hola mundo';
 });
 Route::get('/calculo/{id}','CalculoController@index');
-Route::get('/capacitacion/v1/ecuaciones','CalculoController@calcular');
+Route::post('/capacitacion/v1/ecuaciones','CalculoController@calcular');
 
