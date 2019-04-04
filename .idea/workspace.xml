@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="643e25ee-a703-4c1b-913c-8a92fbd3726c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CalculoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CalculoController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -270,12 +269,12 @@
       <option name="presentableId" value="Default" />
       <updated>1553812103963</updated>
       <workItem from="1553812108163" duration="4635000" />
-      <workItem from="1554349961449" duration="16317000" />
+      <workItem from="1554349961449" duration="16805000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20952000" />
+    <option name="totallyTimeSpent" value="21440000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />

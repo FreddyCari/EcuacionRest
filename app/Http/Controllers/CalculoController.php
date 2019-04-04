@@ -20,6 +20,5 @@ class CalculoController extends Controller
                  'Segundo grado'=>'El resultado es x1 = '.$x1.' , x2 = '.$x2
                 ];
         return response()->json($Resp);
-        return $r;
     }
 }
