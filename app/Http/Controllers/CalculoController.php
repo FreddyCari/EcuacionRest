@@ -33,7 +33,7 @@ class SegundoGrado implements Ecuacion{
 class NingunGrado implements Ecuacion{
     public function calcular($a,$b,$c)
     {
-        return [];
+        return ['error'=>'datos incorrectos.'];
     }
 }
 
