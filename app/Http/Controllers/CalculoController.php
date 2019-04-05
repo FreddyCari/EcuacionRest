@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Nexmo\Response;
+// use Nexmo\Response;
 
 interface Ecuacion{
     public function calcular($a,$b,$c);
@@ -67,14 +67,6 @@ class CalculoController extends Controller
         if(!is_numeric($r['c'])){
             return response()->json(['error'=>'(c) no es numero'],\Symfony\Component\HttpFoundation\Response::HTTP_NOT_FOUND);
         }
-        /*
-        $x = $r['c']-($r['a']-$r['b']);
-        $x1 = (-$r['b']+sqrt($r['b']*$r['b']-4*$r['a']*$r['c']))/(2*$r['a']);
-        $x2 = (-$r['b']-sqrt($r['b']*$r['b']-4*$r['a']*$r['c']))/(2*$r['a']);
-        $Resp = ['Primer grado'=>'El resultado es x = '.$x,
-                 'Segundo grado'=>'El resultado es x1 = '.$x1.' , x2 = '.$x2
-                ];
-        */
         $ecuacion = EcuacionFabrica::getEcuacion($r['tipo']);
         $Resp = $ecuacion->calcular($r['a'],$r['b'],$r['c']);
         if(key($Resp)=='error'){
